@@ -63,10 +63,6 @@
         <meta name="text:Banner Button 1 URL" content="">
         <meta name="text:Banner Button 2 Text" content="">
         <meta name="text:Banner Button 2 URL" content="">
-        <meta name="text:Banner Button 3 Text" content="">
-        <meta name="text:Banner Button 3 URL" content="">
-        <meta name="text:Banner Button 4 Text" content="">
-        <meta name="text:Banner Button 4 URL" content="">
         <meta name="text:Banner Youtube Video ID" content=""/>
         <meta name="text:Banner Youtube Playlist ID" content=""/>
         <meta name="text:Banner Vimeo Video ID" content=""/>
@@ -298,11 +294,10 @@
         }
 
         .button {
-            border-radius: 10px;
             padding: 8px 13px;
             color:{color:Background};
             background:{color:Accent};
-            font-size:20px;
+            font-size:12px;
             font-weight:normal;
             font-family:{block:IfBodyFont}"{text:Body Font}",{/block:IfBodyFont} "{select:Font}", Helvetica Neue, Helvetica, Times New Roman, sans-serif;
             {block:IfTypeKitBodyFont}
@@ -315,7 +310,6 @@
             text-decoration:none;
             display:inline-block;
             margin-top:15px;
-            margin-left:15px;
         }
         
         .banner-button {
@@ -324,7 +318,7 @@
         }
 
         .banner-button:first-of-type {
-            margin:0 0px 0 0;
+            margin:0 14px 0 0;
         }      
         
 
@@ -1309,7 +1303,7 @@
                             {block:IfBannerText}
                                  <div class="banner-text cl">
                                     <p>{text:Banner Text}</p>
-                                    {block:IfBannerButton1URL}<a class="button banner-button" target="_blank" href="{text:Banner Button 1 URL}">{text:Banner Button 1 Text}</a>{/block:IfBannerButton1URL}{block:IfBannerButton2URL}<a class="button banner-button" target="_blank" href="{text:Banner Button 2 URL}">{text:Banner Button 2 Text}</a>{/block:IfBannerButton2URL}{block:IfBannerButton3URL}<a class="button banner-button" target="_blank" href="{text:Banner Button 3 URL}">{text:Banner Button 3 Text}</a>{/block:IfBannerButton3URL}{block:IfBannerButton4URL}<a class="button banner-button" target="_blank" href="{text:Banner Button 4 URL}">{text:Banner Button 4 Text}</a>{/block:IfBannerButton4URL}
+                                    {block:IfBannerButton1URL}<a class="button banner-button" target="_blank" href="{text:Banner Button 1 URL}">{text:Banner Button 1 Text}</a>{/block:IfBannerButton1URL}{block:IfBannerButton2URL}<a class="button banner-button" target="_blank" href="{text:Banner Button 2 URL}">{text:Banner Button 2 Text}</a>{/block:IfBannerButton2URL}
                                 </div>
                             {/block:IfBannerText}
                         {/block:IndexPage}
